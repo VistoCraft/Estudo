@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Logo</h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Home.html">Pagina Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./Produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./formulario.html">fomulario</a>
+                        </li>
+                        <input type="text" class="pesquisa">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="" class="row g-3">
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="name" class="form-control" id="nome">
+                <p class="erro erro-nome">O Nome precisa ter entre 3 a 10 letras</p>  
+            </div>
+            <div class="col-md-6">
+                <label for="sobrenome" class="form-label">Sobrenome</label>
+                <input type="name" class="form-control" id="sobrenome">
+                <p class="erro erro-sobrenome">O Sobrenome precisa ter entre 3 a 10 letras</p> 
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="exemplo@exemplo.com"> 
+                <p class="erro erro-emailVazio">O campo email é obrigatorio</p>
+                <p class="erro erro-emailRE">Email invalido</p>
+            </div>
+            <div class="col-md-6">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha">
+                <p class="erro erro-senha">A senha de ter no minimo tamanho 6 com uma letra e um numero</p>
+            </div>
+            <div class="col-12">
+                <label for="CEP" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="CEP" placeholder="xxxxx-xxx" maxlength="9">
+                <p class="erro erro-CEP">O campo CEP precisa do formato xxxxx-xxx</p>
+                <p class="erro erro-CEP-busca">CEP invalido</p>
+            </div>
+            <div class="col-12">
+                <label for="logradouro" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="logradouro" placeholder="Av champagnat" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" disabled>
+            </div>
+            <div class="col-md-4">
+                <label for="estado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="estado" disabled>
+            </div>
+            <div class="col-md-2">
+                <label for="numero" class="form-label">numero</label>
+                <input type="text" class="form-control" id="numero">
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>Feito Por Visto Craft</h3>
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/validação.js"></script>
+</body>
+
+</html>

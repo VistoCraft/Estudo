@@ -1,0 +1,31 @@
+main{
+    margin-top: 30px
+}
+
+.row{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    max-width: 940px;
+    background-color: #999999;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+footer
+{
+    position: fixed;
+    bottom:0;
+}
+
+.erro{
+    color: red;
+    display: none;
+}
+
+p{
+    margin-bottom: 0px;
+}
